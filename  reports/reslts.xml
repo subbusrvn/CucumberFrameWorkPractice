@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="53.221" tests="5" skipped="0" failures="1" errors="0">
+<testcase classname="Login Operation from bookcart" name="Add Book to the cart - Example #1.1" time="11.66">
+<system-out><![CDATA[
+Given User should navigate to the application...............................passed
+And User clicks on the Login link...........................................passed
+And User Enter the "subbusrvn" and "Sarvan@123#"............................passed
+When User serch the "HP3"...................................................passed
+Then Boks should aaded into the card batch..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Operation from bookcart" name="Add Book to the cart - Example #1.2" time="6.497">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[3]/div/div/div/mat-option/span&quot;}
+  (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6675d547f5af466fbe7dd23e2b098945, findElement {value=/html/body/div[3]/div/div/div/mat-option/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\saravasu\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62537}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62537/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6675d547f5af466fbe7dd23e2b098945">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div/div/div/mat-option/span"}
+  (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6675d547f5af466fbe7dd23e2b098945, findElement {value=/html/body/div[3]/div/div/div/mat-option/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\saravasu\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62537}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62537/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6675d547f5af466fbe7dd23e2b098945
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at steps.AddBooktoCart.userSerchThe(AddBooktoCart.java:43)
+	at ✽.User serch the "Roomies"(file:///C:/Users/saravasu/eclipse-workspace/CucumberFrameWorkPractice/src/test/java/features/addtoCart.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User should navigate to the application...............................passed
+And User clicks on the Login link...........................................passed
+And User Enter the "vickysubbu" and "Sarvan@123#"...........................passed
+When User serch the "Roomies"...............................................failed
+Then Boks should aaded into the card batch..................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login Operation from bookcart" name="Add Book to the cart - Example #2.1" time="13.072">
+<system-out><![CDATA[
+Given User should navigate to the application...............................passed
+And User clicks on the Login link...........................................passed
+And User Enter the "subbusrvn" and "Sarvan@123#"............................passed
+When User serch the "HP3"...................................................passed
+Then Boks should aaded into the card batch..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Operation from bookcart" name="Login should be success" time="11.792">
+<system-out><![CDATA[
+Given User should navigate to the applications..............................passed
+And User clicks on the Login links..........................................passed
+And User Enter the username as "subbusrvn"..................................passed
+And User enter the password as "Sarvan@123#"................................passed
+When User clicks on the Login button........................................passed
+Then Login should be success................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Operation from bookcart" name="Login should be falied" time="9.942">
+<system-out><![CDATA[
+Given User should navigate to the applications..............................passed
+And User clicks on the Login links..........................................passed
+And User Enter the username as "subbusrvn12123".............................passed
+And User enter the password as "Sarvansdsd".................................passed
+When User clicks on the Login button........................................passed
+But Login should be failed..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
